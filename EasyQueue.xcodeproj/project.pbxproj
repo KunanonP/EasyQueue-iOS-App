@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		337E076420B1902E00863170 /* QueueInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E076320B1902E00863170 /* QueueInController.swift */; };
+		33AAE56220B2959B00653998 /* QueueSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AAE56120B2959B00653998 /* QueueSummaryController.swift */; };
+		7A74515320C27DF300ABBB2F /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A74515220C27DF300ABBB2F /* BookingTableViewCell.swift */; };
+		7A74515920C29C5400ABBB2F /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A74515820C29C5400ABBB2F /* Logo.png */; };
+		7A74515D20C2AAC300ABBB2F /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A74515C20C2AAC300ABBB2F /* button.png */; };
+		7A74515F20C2AD0700ABBB2F /* bookings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A74515E20C2AD0700ABBB2F /* bookings.png */; };
+		7AEB5A3920BAC1330039CFD1 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB5A3820BAC1330039CFD1 /* BookingViewController.swift */; };
+		9848DA4720BBCC68003704B6 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9848DA4520BBCC68003704B6 /* OrderViewController.swift */; };
+		9848DA4820BBCC68003704B6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9848DA4620BBCC68003704B6 /* MenuViewController.swift */; };
+		E1AB4C6B20A44F1F00E7BAFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB4C6A20A44F1F00E7BAFF /* AppDelegate.swift */; };
+		E1AB4C6D20A44F1F00E7BAFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB4C6C20A44F1F00E7BAFF /* LoginViewController.swift */; };
+		E1AB4C7020A44F1F00E7BAFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1AB4C6E20A44F1F00E7BAFF /* Main.storyboard */; };
+		E1AB4C7220A44F1F00E7BAFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1AB4C7120A44F1F00E7BAFF /* Assets.xcassets */; };
+		E1AB4C7520A44F1F00E7BAFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1AB4C7320A44F1F00E7BAFF /* LaunchScreen.storyboard */; };
+		E1AB4C8020A44F1F00E7BAFF /* EasyQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB4C7F20A44F1F00E7BAFF /* EasyQueueTests.swift */; };
+		E1AB4C8B20A44F1F00E7BAFF /* EasyQueueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AB4C8A20A44F1F00E7BAFF /* EasyQueueUITests.swift */; };
+		E1D32B4B20B19B9E0071A4B0 /* rest4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1D32B4720B19B9E0071A4B0 /* rest4.jpg */; };
+		E1D32B4C20B19B9E0071A4B0 /* rest1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1D32B4820B19B9E0071A4B0 /* rest1.jpg */; };
+		E1D32B4D20B19B9E0071A4B0 /* rest2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1D32B4920B19B9E0071A4B0 /* rest2.jpg */; };
+		E1D32B4E20B19B9E0071A4B0 /* rest3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1D32B4A20B19B9E0071A4B0 /* rest3.jpg */; };
+		E1D32B5020B1A2390071A4B0 /* RestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D32B4F20B1A2390071A4B0 /* RestaurantListTableViewCell.swift */; };
+		E1D32B5220B1B0BA0071A4B0 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D32B5120B1B0BA0071A4B0 /* RestaurantViewController.swift */; };
+		E1E18B6920AC664E00D2B4CB /* EasyQueueDB.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = E1E18B6820AC664E00D2B4CB /* EasyQueueDB.sqlite3 */; };
+		E1E18B6B20AC66BF00D2B4CB /* RestaurantListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E18B6A20AC66BF00D2B4CB /* RestaurantListTableViewController.swift */; };
+		E1E18B6E20AC689600D2B4CB /* EasyQueueDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E18B6D20AC689600D2B4CB /* EasyQueueDB.swift */; };
+		E1E18B9C20AC785E00D2B4CB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E18B9B20AC785E00D2B4CB /* libsqlite3.tbd */; };
+		E1E18BA420AC793D00D2B4CB /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E18B9F20AC793C00D2B4CB /* SQLiteDB.swift */; };
+		E1E18BA520AC793D00D2B4CB /* SQLiteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E18BA020AC793C00D2B4CB /* SQLiteBase.swift */; };
+		E1E18BA620AC793D00D2B4CB /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E18BA120AC793C00D2B4CB /* SQLTable.swift */; };
+		E1E18BA720AC793D00D2B4CB /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E18BA320AC793D00D2B4CB /* CloudDB.swift */; };
+		E1E18BA920AC8F4900D2B4CB /* EasyQueueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E18BA820AC8F4900D2B4CB /* EasyQueueData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1AB4C7C20A44F1F00E7BAFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1AB4C5F20A44F1F00E7BAFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1AB4C6620A44F1F00E7BAFF;
+			remoteInfo = EasyQueue;
+		};
+		E1AB4C8720A44F1F00E7BAFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1AB4C5F20A44F1F00E7BAFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1AB4C6620A44F1F00E7BAFF;
+			remoteInfo = EasyQueue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		337E076320B1902E00863170 /* QueueInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueInController.swift; sourceTree = "<group>"; };
+		33AAE56120B2959B00653998 /* QueueSummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueSummaryController.swift; sourceTree = "<group>"; };
+		7A74515220C27DF300ABBB2F /* BookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		7A74515820C29C5400ABBB2F /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		7A74515C20C2AAC300ABBB2F /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		7A74515E20C2AD0700ABBB2F /* bookings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookings.png; sourceTree = "<group>"; };
+		7AEB5A3820BAC1330039CFD1 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		9848DA4520BBCC68003704B6 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		9848DA4620BBCC68003704B6 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E1AB4C6720A44F1F00E7BAFF /* EasyQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AB4C6A20A44F1F00E7BAFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1AB4C6C20A44F1F00E7BAFF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E1AB4C6F20A44F1F00E7BAFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1AB4C7120A44F1F00E7BAFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1AB4C7420A44F1F00E7BAFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1AB4C7620A44F1F00E7BAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1AB4C7B20A44F1F00E7BAFF /* EasyQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AB4C7F20A44F1F00E7BAFF /* EasyQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyQueueTests.swift; sourceTree = "<group>"; };
+		E1AB4C8120A44F1F00E7BAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1AB4C8620A44F1F00E7BAFF /* EasyQueueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyQueueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1AB4C8A20A44F1F00E7BAFF /* EasyQueueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyQueueUITests.swift; sourceTree = "<group>"; };
+		E1AB4C8C20A44F1F00E7BAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D32B4720B19B9E0071A4B0 /* rest4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rest4.jpg; sourceTree = "<group>"; };
+		E1D32B4820B19B9E0071A4B0 /* rest1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rest1.jpg; sourceTree = "<group>"; };
+		E1D32B4920B19B9E0071A4B0 /* rest2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rest2.jpg; sourceTree = "<group>"; };
+		E1D32B4A20B19B9E0071A4B0 /* rest3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rest3.jpg; sourceTree = "<group>"; };
+		E1D32B4F20B1A2390071A4B0 /* RestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewCell.swift; sourceTree = "<group>"; };
+		E1D32B5120B1B0BA0071A4B0 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		E1E18B6820AC664E00D2B4CB /* EasyQueueDB.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = EasyQueueDB.sqlite3; sourceTree = "<group>"; };
+		E1E18B6A20AC66BF00D2B4CB /* RestaurantListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewController.swift; sourceTree = "<group>"; };
+		E1E18B6D20AC689600D2B4CB /* EasyQueueDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyQueueDB.swift; sourceTree = "<group>"; };
+		E1E18B9B20AC785E00D2B4CB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E1E18B9F20AC793C00D2B4CB /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		E1E18BA020AC793C00D2B4CB /* SQLiteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteBase.swift; sourceTree = "<group>"; };
+		E1E18BA120AC793C00D2B4CB /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		E1E18BA220AC793C00D2B4CB /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		E1E18BA320AC793D00D2B4CB /* CloudDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudDB.swift; sourceTree = "<group>"; };
+		E1E18BA820AC8F4900D2B4CB /* EasyQueueData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyQueueData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1AB4C6420A44F1F00E7BAFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E18B9C20AC785E00D2B4CB /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AB4C7820A44F1F00E7BAFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AB4C8320A44F1F00E7BAFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1AB4C5E20A44F1F00E7BAFF = {
+			isa = PBXGroup;
+			children = (
+				E1AB4C6920A44F1F00E7BAFF /* EasyQueue */,
+				E1AB4C7E20A44F1F00E7BAFF /* EasyQueueTests */,
+				E1AB4C8920A44F1F00E7BAFF /* EasyQueueUITests */,
+				E1AB4C6820A44F1F00E7BAFF /* Products */,
+				E1E18B9A20AC785E00D2B4CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1AB4C6820A44F1F00E7BAFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB4C6720A44F1F00E7BAFF /* EasyQueue.app */,
+				E1AB4C7B20A44F1F00E7BAFF /* EasyQueueTests.xctest */,
+				E1AB4C8620A44F1F00E7BAFF /* EasyQueueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1AB4C6920A44F1F00E7BAFF /* EasyQueue */ = {
+			isa = PBXGroup;
+			children = (
+				E1E18B6720AC65EA00D2B4CB /* Controllers */,
+				E1E18B6C20AC683E00D2B4CB /* Models */,
+				E1E18B9D20AC78FB00D2B4CB /* Libraries */,
+				E1E18B6620AC65D900D2B4CB /* Resources */,
+				E1AB4C6A20A44F1F00E7BAFF /* AppDelegate.swift */,
+				E1AB4C6E20A44F1F00E7BAFF /* Main.storyboard */,
+				E1AB4C7120A44F1F00E7BAFF /* Assets.xcassets */,
+				E1AB4C7320A44F1F00E7BAFF /* LaunchScreen.storyboard */,
+				E1AB4C7620A44F1F00E7BAFF /* Info.plist */,
+			);
+			path = EasyQueue;
+			sourceTree = "<group>";
+		};
+		E1AB4C7E20A44F1F00E7BAFF /* EasyQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB4C7F20A44F1F00E7BAFF /* EasyQueueTests.swift */,
+				E1AB4C8120A44F1F00E7BAFF /* Info.plist */,
+			);
+			path = EasyQueueTests;
+			sourceTree = "<group>";
+		};
+		E1AB4C8920A44F1F00E7BAFF /* EasyQueueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB4C8A20A44F1F00E7BAFF /* EasyQueueUITests.swift */,
+				E1AB4C8C20A44F1F00E7BAFF /* Info.plist */,
+			);
+			path = EasyQueueUITests;
+			sourceTree = "<group>";
+		};
+		E1D32B4620B199430071A4B0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32B4820B19B9E0071A4B0 /* rest1.jpg */,
+				E1D32B4920B19B9E0071A4B0 /* rest2.jpg */,
+				E1D32B4A20B19B9E0071A4B0 /* rest3.jpg */,
+				E1D32B4720B19B9E0071A4B0 /* rest4.jpg */,
+				7A74515C20C2AAC300ABBB2F /* button.png */,
+				7A74515E20C2AD0700ABBB2F /* bookings.png */,
+				7A74515820C29C5400ABBB2F /* Logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E1E18B6620AC65D900D2B4CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1D32B4620B199430071A4B0 /* Images */,
+				E1E18B6820AC664E00D2B4CB /* EasyQueueDB.sqlite3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1E18B6720AC65EA00D2B4CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1AB4C6C20A44F1F00E7BAFF /* LoginViewController.swift */,
+				E1E18B6A20AC66BF00D2B4CB /* RestaurantListTableViewController.swift */,
+				E1D32B4F20B1A2390071A4B0 /* RestaurantListTableViewCell.swift */,
+				E1D32B5120B1B0BA0071A4B0 /* RestaurantViewController.swift */,
+				337E076320B1902E00863170 /* QueueInController.swift */,
+				33AAE56120B2959B00653998 /* QueueSummaryController.swift */,
+				9848DA4620BBCC68003704B6 /* MenuViewController.swift */,
+				9848DA4520BBCC68003704B6 /* OrderViewController.swift */,
+				7AEB5A3820BAC1330039CFD1 /* BookingViewController.swift */,
+				7A74515220C27DF300ABBB2F /* BookingTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E1E18B6C20AC683E00D2B4CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1E18BA820AC8F4900D2B4CB /* EasyQueueData.swift */,
+				E1E18B6D20AC689600D2B4CB /* EasyQueueDB.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1E18B9A20AC785E00D2B4CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1E18B9B20AC785E00D2B4CB /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1E18B9D20AC78FB00D2B4CB /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E1E18B9E20AC790C00D2B4CB /* SQLiteDB */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E1E18B9E20AC790C00D2B4CB /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				E1E18BA220AC793C00D2B4CB /* Bridging-Header.h */,
+				E1E18BA320AC793D00D2B4CB /* CloudDB.swift */,
+				E1E18BA020AC793C00D2B4CB /* SQLiteBase.swift */,
+				E1E18B9F20AC793C00D2B4CB /* SQLiteDB.swift */,
+				E1E18BA120AC793C00D2B4CB /* SQLTable.swift */,
+			);
+			path = SQLiteDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1AB4C6620A44F1F00E7BAFF /* EasyQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1AB4C8F20A44F1F00E7BAFF /* Build configuration list for PBXNativeTarget "EasyQueue" */;
+			buildPhases = (
+				E1AB4C6320A44F1F00E7BAFF /* Sources */,
+				E1AB4C6420A44F1F00E7BAFF /* Frameworks */,
+				E1AB4C6520A44F1F00E7BAFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyQueue;
+			productName = EasyQueue;
+			productReference = E1AB4C6720A44F1F00E7BAFF /* EasyQueue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1AB4C7A20A44F1F00E7BAFF /* EasyQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1AB4C9220A44F1F00E7BAFF /* Build configuration list for PBXNativeTarget "EasyQueueTests" */;
+			buildPhases = (
+				E1AB4C7720A44F1F00E7BAFF /* Sources */,
+				E1AB4C7820A44F1F00E7BAFF /* Frameworks */,
+				E1AB4C7920A44F1F00E7BAFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1AB4C7D20A44F1F00E7BAFF /* PBXTargetDependency */,
+			);
+			name = EasyQueueTests;
+			productName = EasyQueueTests;
+			productReference = E1AB4C7B20A44F1F00E7BAFF /* EasyQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1AB4C8520A44F1F00E7BAFF /* EasyQueueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1AB4C9520A44F1F00E7BAFF /* Build configuration list for PBXNativeTarget "EasyQueueUITests" */;
+			buildPhases = (
+				E1AB4C8220A44F1F00E7BAFF /* Sources */,
+				E1AB4C8320A44F1F00E7BAFF /* Frameworks */,
+				E1AB4C8420A44F1F00E7BAFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1AB4C8820A44F1F00E7BAFF /* PBXTargetDependency */,
+			);
+			name = EasyQueueUITests;
+			productName = EasyQueueUITests;
+			productReference = E1AB4C8620A44F1F00E7BAFF /* EasyQueueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1AB4C5F20A44F1F00E7BAFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Nicholas;
+				TargetAttributes = {
+					E1AB4C6620A44F1F00E7BAFF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E1AB4C7A20A44F1F00E7BAFF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1AB4C6620A44F1F00E7BAFF;
+					};
+					E1AB4C8520A44F1F00E7BAFF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1AB4C6620A44F1F00E7BAFF;
+					};
+				};
+			};
+			buildConfigurationList = E1AB4C6220A44F1F00E7BAFF /* Build configuration list for PBXProject "EasyQueue" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1AB4C5E20A44F1F00E7BAFF;
+			productRefGroup = E1AB4C6820A44F1F00E7BAFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1AB4C6620A44F1F00E7BAFF /* EasyQueue */,
+				E1AB4C7A20A44F1F00E7BAFF /* EasyQueueTests */,
+				E1AB4C8520A44F1F00E7BAFF /* EasyQueueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1AB4C6520A44F1F00E7BAFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A74515D20C2AAC300ABBB2F /* button.png in Resources */,
+				7A74515920C29C5400ABBB2F /* Logo.png in Resources */,
+				E1AB4C7520A44F1F00E7BAFF /* LaunchScreen.storyboard in Resources */,
+				E1D32B4E20B19B9E0071A4B0 /* rest3.jpg in Resources */,
+				E1D32B4C20B19B9E0071A4B0 /* rest1.jpg in Resources */,
+				E1AB4C7220A44F1F00E7BAFF /* Assets.xcassets in Resources */,
+				E1D32B4D20B19B9E0071A4B0 /* rest2.jpg in Resources */,
+				7A74515F20C2AD0700ABBB2F /* bookings.png in Resources */,
+				E1AB4C7020A44F1F00E7BAFF /* Main.storyboard in Resources */,
+				E1E18B6920AC664E00D2B4CB /* EasyQueueDB.sqlite3 in Resources */,
+				E1D32B4B20B19B9E0071A4B0 /* rest4.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AB4C7920A44F1F00E7BAFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AB4C8420A44F1F00E7BAFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1AB4C6320A44F1F00E7BAFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337E076420B1902E00863170 /* QueueInController.swift in Sources */,
+				9848DA4820BBCC68003704B6 /* MenuViewController.swift in Sources */,
+				33AAE56220B2959B00653998 /* QueueSummaryController.swift in Sources */,
+				E1D32B5020B1A2390071A4B0 /* RestaurantListTableViewCell.swift in Sources */,
+				9848DA4720BBCC68003704B6 /* OrderViewController.swift in Sources */,
+				E1AB4C6D20A44F1F00E7BAFF /* LoginViewController.swift in Sources */,
+				7A74515320C27DF300ABBB2F /* BookingTableViewCell.swift in Sources */,
+				E1E18BA620AC793D00D2B4CB /* SQLTable.swift in Sources */,
+				E1E18B6E20AC689600D2B4CB /* EasyQueueDB.swift in Sources */,
+				E1E18BA420AC793D00D2B4CB /* SQLiteDB.swift in Sources */,
+				E1AB4C6B20A44F1F00E7BAFF /* AppDelegate.swift in Sources */,
+				E1E18BA720AC793D00D2B4CB /* CloudDB.swift in Sources */,
+				E1E18BA520AC793D00D2B4CB /* SQLiteBase.swift in Sources */,
+				E1E18BA920AC8F4900D2B4CB /* EasyQueueData.swift in Sources */,
+				E1D32B5220B1B0BA0071A4B0 /* RestaurantViewController.swift in Sources */,
+				7AEB5A3920BAC1330039CFD1 /* BookingViewController.swift in Sources */,
+				E1E18B6B20AC66BF00D2B4CB /* RestaurantListTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AB4C7720A44F1F00E7BAFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AB4C8020A44F1F00E7BAFF /* EasyQueueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1AB4C8220A44F1F00E7BAFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AB4C8B20A44F1F00E7BAFF /* EasyQueueUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1AB4C7D20A44F1F00E7BAFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1AB4C6620A44F1F00E7BAFF /* EasyQueue */;
+			targetProxy = E1AB4C7C20A44F1F00E7BAFF /* PBXContainerItemProxy */;
+		};
+		E1AB4C8820A44F1F00E7BAFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1AB4C6620A44F1F00E7BAFF /* EasyQueue */;
+			targetProxy = E1AB4C8720A44F1F00E7BAFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1AB4C6E20A44F1F00E7BAFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1AB4C6F20A44F1F00E7BAFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1AB4C7320A44F1F00E7BAFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1AB4C7420A44F1F00E7BAFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1AB4C8D20A44F1F00E7BAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1AB4C8E20A44F1F00E7BAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1AB4C9020A44F1F00E7BAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EasyQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ass3.EasyQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1AB4C9120A44F1F00E7BAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EasyQueue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ass3.EasyQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1AB4C9320A44F1F00E7BAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EasyQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ass3.EasyQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyQueue.app/EasyQueue";
+			};
+			name = Debug;
+		};
+		E1AB4C9420A44F1F00E7BAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EasyQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ass3.EasyQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyQueue.app/EasyQueue";
+			};
+			name = Release;
+		};
+		E1AB4C9620A44F1F00E7BAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EasyQueueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ass3.EasyQueueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyQueue;
+			};
+			name = Debug;
+		};
+		E1AB4C9720A44F1F00E7BAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EasyQueueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ass3.EasyQueueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EasyQueue;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1AB4C6220A44F1F00E7BAFF /* Build configuration list for PBXProject "EasyQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AB4C8D20A44F1F00E7BAFF /* Debug */,
+				E1AB4C8E20A44F1F00E7BAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1AB4C8F20A44F1F00E7BAFF /* Build configuration list for PBXNativeTarget "EasyQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AB4C9020A44F1F00E7BAFF /* Debug */,
+				E1AB4C9120A44F1F00E7BAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1AB4C9220A44F1F00E7BAFF /* Build configuration list for PBXNativeTarget "EasyQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AB4C9320A44F1F00E7BAFF /* Debug */,
+				E1AB4C9420A44F1F00E7BAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1AB4C9520A44F1F00E7BAFF /* Build configuration list for PBXNativeTarget "EasyQueueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1AB4C9620A44F1F00E7BAFF /* Debug */,
+				E1AB4C9720A44F1F00E7BAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1AB4C5F20A44F1F00E7BAFF /* Project object */;
+}
